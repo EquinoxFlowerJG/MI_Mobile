@@ -1,17 +1,23 @@
+
+
+a{
+    text-decoration: none;
+}
+
 .app-shell img{
     width: 100%;
 }
 .app-header-wrapper{
-    display：-webkit-box；
-    display:  -webkit-flex;
+    display: -webkit-box;
+    display: -webkit-flex;
     display:  -ms-flexbox;
     display:  flex;
     display: -webkit-flex;
     display: -ms-flexbox;
     /* 垂直居中 */
-    /* -webkit-box-align: center;
+    -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;  */
+    align-items: center; 
 }
 /* 左侧logo */
 .app-logo{
@@ -28,8 +34,8 @@
 }
 .app-login-icon{
     display: block;
-    width: .6rem;
-    height: .6rem;
+    width: .4rem;
+    height: .4rem;
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAMAAAANIilAAAAAkFBMVEUAAABiYmJoaGhxcXFwcHBwcHBycnJwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBzc3NycnJwcHB2dnZwcHBwcHBxcXFwcHBwcHBwcHBwcHBwcHBwcHBwcHBvb29wcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBvb29wcHBwcHBwcHBwcHBnZ2dwcHC6NtRcAAAAMHRSTlMAAwoXHycsRXWfxdzz+jB+vv8ljv/+72HU682aahOXTQ+wNblUtazlb1elWuE7B4ObTEwxAAADdklEQVR4AZWWh5rqOgyEnd7LEA2k0Os24P3f7vLdBVOSTTizBbfflmVZWHXJUBeZlu24rmNbpm56U5bnB2EUJ0kchYHvWep9pVke40FxnqX9hLZ4VEQQgEk8vihOCAiiYnTpHGKNSQmAVd1MvdRxUm/a1BUBlJNLZz87mycAo2axNHTjctFEBJL5rI82lL0SYjxfX+sX/ZbW8zEoK1sZPexGiHL7cDa6uC1B2XTQ2uaVEDv3idS8uwNl9bflhRB7q7vbUNYelOKvhRck8g5W0znIhTI6+2rwsO5zyfpA1N2zfwg5Ub2akPLR6a0I2Jn9J2nugKjLZ5/s3FDLLfxUba0guTUYgLlg1e6wIkg2HPqZIJq1DRpj3Gu1HlbpYbrVT6QcDcOjWpKPFlxAclMNyswFRQv+ElmpN7QS+WrBe5H9kNV6XP/Kre5HuL3yHLIx1LB2gnkLzii1peuW9RwES10KhVkL/o5x8G6tXlnq8kXTn91vCjHU8Ufi75Zv3AMwvbUWIuFSGbebWIlsr+UpcXBVSyHk6zbjBGRxO3UnB+PrPT99CULVVkZU66txy42Q+/X/w7c1KGdtBJh1wE6lM5Sh0lKIn+Dbm+5iEF+3O1wIK0d1aA6Oj7ddpzkAxuMEv9le/bprTDSdsZNWxEanCescERAgCSeXputuwCrtjsMMRHEZdI2p1N/XUdhMLB1lBYjsrzSxAZk9BOPSSUfGfTaflFyb1kqtEZhkevjvqNv/U5YQUU9qXlQgG/s+n6GH2gGIaqF6tD2ACL/NVg74DEEctqpXXg0i3kxe5lzFIGpPDcgJElA4ffouiYVIAkcN6vRdM0HsKkP7MUHC8PvUz11d3JDE8Q57QrL47Rt4DB2bmMRudoetXMi4OQ4+h2b+Dwis7Ke7vieIH3/Zz7orgizPs5eT8ksS3Lt97LEE8XN+fa9dKs75AKI89rCREJujemavVS8HJTr+FdpuKUQwa6FX3ArAru8znXtQmH8/aMwClFX3gDOI5tT3oDk1IM6dG44fEknPjY+7nLbDLXuqvscUsGs3b2NtUR+dgfG2tcRe9PusD7ZLyKplzw94VidjSKoAfvTurrAPRLZ6Q3YE+C8WBoLQHjmjATkjO4QEL8EVgUn1lhKidJXxAC9A4k2RWDzBn5LwPSVkIp9Pm16m7j8ovWaF/wCc31NtcLeHeAAAAABJRU5ErkJggg==) no-repeat;
     background-size: .4rem .4rem;
 }
@@ -40,7 +46,6 @@
     -ms-flex: 1;
     flex: 1;
     position: relative;
-    margin: ;
 }
 .app-text{
     width: 100%;
@@ -50,11 +55,15 @@
     background: #fff;
     box-sizing: border-box;
     display: block;
-    padding-left: .4rem;
+    padding: .05rem .4rem;
+}
+.app-text::placeholder{
+    color: rgba(0, 0, 0, .3);
+    font-size: .3rem;
 }
 .app-btn{
     position: absolute;
-    top: 0;
+    top: 0.04rem;
     left: 0;
     width: .6rem;
     height: .6rem;
@@ -102,6 +111,7 @@
     display: block;
 }
 
+/* 内容区开始 */
 .multi-cell{
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -121,14 +131,186 @@
 .cell-auto-fill a img{
     width: 100%;
     display: block;
+    margin: .04rem 0;
 }
 .multi-cell-pic{
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
     padding-left: .03rem;
 }
 .multi-cell-wrap{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     margin-left: -.03rem;
 }
 .multi-cell-pic a{
     margin-bottom: .03rem;
     display: block;
+}
+.multi-cell-pic a img{
+    width: 100%;
+}
+
+.multi-cell-choice{
+    width: 100%;
+    padding: 0 .12rem;
+    overflow: hidden;
+    
+}
+.multi-cell-choice a{
+    margin-right: .12rem;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+}
+.multi-cell-choice a .name{
+   margin-top: .2rem;
+   font-size: .28rem;
+   color: rgba(0, 0, 0, .87);
+}
+.multi-cell-choice a .introduce{
+    font-size: .22rem;
+    color: rgba(0, 0, 0, .54);
+    line-height: .3rem;
+    margin-top: .06rem;
+}
+.multi-cell-choice a .price{
+    font-size: .28rem;
+    color: #ea625b;
+    height: .5rem;
+    line-height: .5rem;
+}
+.multi-cell-choice a .price .text{
+    font-size: .2rem;
+    margin: 0 .1rem 0 .06rem;
+}
+.multi-cell-choice a .price .old-price{
+    font-size: .22rem;
+    color: rgba(0, 0, 0, .54);
+}
+.multi-cell-choice a .btn{
+    width: 2rem;
+    background: #ea625b;
+    border-radius: .05rem;
+    text-align: center;
+    color: #fff;
+    font-size: .24rem;
+    padding: .16rem 0;
+    font-weight: 700;
+    margin: 0 auto .2rem auto;
+}
+.multi-cell-choice a div.tag{
+    position: absolute;
+    right: 0;
+    top: 36%;
+}
+.multi-cell-choice a div.tag img{
+    width: 1rem;
+}
+.more-products{
+    font-size: .28rem;
+    height: 1rem;
+    line-height: 1rem;
+    color: rgba(0, 0, 0, .6);
+    background: #fff;
+    text-align: center;
+    display: block;
+}
+
+/* 底部产品分类 */
+.foot-menu-class a img{
+    margin: .03rem 0;
+}
+.foot-menu-class{
+    margin-bottom: 1.0rem;
+}
+
+
+
+
+/* 特殊格式 */
+a.special-style-padding{
+    text-align: left;
+    padding: .64rem 0 0 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a.special-style-margin{
+    margin: 0;
+}
+a.special-style-margin img{
+    margin: 0;
+}
+a.special-style-margin div{
+    padding-left: .32rem;
+}
+
+
+
+/* 底部菜单 */
+footer.menu{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    z-index: 999;
+    height: 1rem;
+    background: #fff;
+    box-shadow: 0 3px 14px 2px rgba(0, 0, 0, .12);
+}
+footer.menu a{
+    display: block;
+    color: #999;
+    font-size: .22rem;
+    text-align: center;
+}
+footer.menu i{
+    width: .4rem;
+    height: .4rem;
+    display: block;
+    margin: 0.1rem auto .1rem;
+}
+footer.menu .menu-img1{
+    background: url("../images/footer-menu-img1.png") no-repeat left top/100% 100%;
+}
+footer.menu .menu-img2{
+    background: url("../images/footer-menu-img2.png") no-repeat left top/100% 100%;
+}
+footer.menu .menu-img3{
+    background: url("../images/footer-menu-img3.png") no-repeat left top/100% 100%;
+}
+footer.menu .menu-img4{
+    background: url("../images/footer-menu-img4.png") no-repeat left top/100% 100%;
+}
+
+/* 固定悬浮窗 */
+.fix-bar{
+    position: fixed;
+    right: .26rem;
+    bottom: 1.4rem;
+    z-index: 997;
+}
+.fix-bar-img1{
+    width: 1.1rem;
+    height: 1.12rem;
+    display: block;
+    overflow: hidden;
+    margin: .1rem auto 0;
+}
+.fix-bar a.fix-bar-img2{
+    width: .7rem;
+    height: 1rem;
+    display: block;
+    overflow: hidden;
+    margin: .1rem auto 0;
+}
+.fix-bar a img{
+    width: 100%;
 }
